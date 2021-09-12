@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "f3990c3d-fd1d-4043-8f66-b75b8fdc23e4",
+		"name": "chococollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Im5ld3VzZXIxIiwiZXhwIjoxNjI5NTU1MTcyLCJlbWFpbCI6ImxvbEBtYWlsLnJ1In0.beS2fSHbz_r0smpnovI9xEnLWaCVWiLqRhX-rtnU0ag",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"user2\",\n    \"password\":\"kek\",\n    \"email\":\"aigerimsadir@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjI5NTUzNzQ5LCJlbWFpbCI6ImFhYUBnbWFpbC5jb20ifQ.T7zZPvs8lxqzMdKd_9gUDeZ8f2mPfqCWcy3yKpwFE-E",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"admin\",\n    \"password\":\"rootroot\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjMxOTczODY1LCJlbWFpbCI6ImFpZ2VyaW1zYWRpckBnbWFpbC5jb20ifQ.TSyI264F-alWTuFgdxSabMJTb2qKq0V-Vj3VB2ZHUDo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"zero task\",\n    \"priority\":0,\n    \"status\":1,\n    \"performer\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"newus3\",\n    \"password\":\"root\",\n    \"email\":\"a.sadir@orion-m2m.com\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send statistics",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjMxOTczODY1LCJlbWFpbCI6ImFpZ2VyaW1zYWRpckBnbWFpbC5jb20ifQ.TSyI264F-alWTuFgdxSabMJTb2qKq0V-Vj3VB2ZHUDo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"1st task\",\n   \"priority\":2\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/send_statistics/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"send_statistics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task_by status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjMxOTczODY1LCJlbWFpbCI6ImFpZ2VyaW1zYWRpckBnbWFpbC5jb20ifQ.TSyI264F-alWTuFgdxSabMJTb2qKq0V-Vj3VB2ZHUDo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/tasks_by_status/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						"tasks_by_status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjMxOTczODY1LCJlbWFpbCI6ImFpZ2VyaW1zYWRpckBnbWFpbC5jb20ifQ.TSyI264F-alWTuFgdxSabMJTb2qKq0V-Vj3VB2ZHUDo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"fifth task\",\n    \"priority\":0,\n    \"status\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjMxOTczODY1LCJlbWFpbCI6ImFpZ2VyaW1zYWRpckBnbWFpbC5jb20ifQ.TSyI264F-alWTuFgdxSabMJTb2qKq0V-Vj3VB2ZHUDo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"fifth task\",\n    \"priority\":0,\n    \"status\":1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/task/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"task",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
